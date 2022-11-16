@@ -6,7 +6,7 @@
   <link href="https://chocolin1226.github.io/atom.xml" rel="self"/>
   
   <link href="https://chocolin1226.github.io/"/>
-  <updated>2022-11-16T18:06:14.389Z</updated>
+  <updated>2022-11-16T18:10:28.174Z</updated>
   <id>https://chocolin1226.github.io/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="https://chocolin1226.github.io/2022/11/08/RoR_03/"/>
     <id>https://chocolin1226.github.io/2022/11/08/RoR_03/</id>
     <published>2022-11-08T08:33:15.000Z</published>
-    <updated>2022-11-16T18:06:14.389Z</updated>
+    <updated>2022-11-16T18:10:28.174Z</updated>
     
     <content type="html"><![CDATA[<h2 id="What-is-Model"><a href="#What-is-Model" class="headerlink" title="What is Model?"></a>What is Model?</h2><p>模組，將鬆散的資料表達成有意義的資訊。</p><h2 id="How-to-Modeling-建模"><a href="#How-to-Modeling-建模" class="headerlink" title="How to Modeling(建模)?"></a>How to Modeling(建模)?</h2><p>將眾多Data合成(composite)抽象的Value Object</p><p>將眾多Value合成實體(Entity：有id,獨一無二,狀態可改)</p><p>Entity有事件發生時會改變什麼狀態</p>]]></content>
     
     
-    <summary type="html">MCV的Model</summary>
+    <summary type="html">Ruby on Rails</summary>
     
     
     
@@ -38,16 +38,12 @@
     <link href="https://chocolin1226.github.io/2022/11/07/RoR_02/"/>
     <id>https://chocolin1226.github.io/2022/11/07/RoR_02/</id>
     <published>2022-11-07T08:33:15.000Z</published>
-    <updated>2022-11-16T18:05:25.205Z</updated>
+    <updated>2022-11-16T18:10:18.912Z</updated>
     
     <content type="html"><![CDATA[<h2 id="符號v-s-字串"><a href="#符號v-s-字串" class="headerlink" title="符號v.s.字串"></a>符號v.s.字串</h2><p>符號：有名字的物件，是一種值</p><h3 id="1-symbol的內容不能改變"><a href="#1-symbol的內容不能改變" class="headerlink" title="1. symbol的內容不能改變"></a>1. symbol的內容不能改變</h3><p>  字串想要改其中一個字是可以的，但符號不行。<br>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;abcd&quot;[0] = &quot;z&quot;    #字串變成&quot;zbcd&quot;</span><br><span class="line">:abcd[0] = &quot;z&quot;     #錯誤訊息</span><br></pre></td></tr></table></figure></p><h3 id="2-symbol指到同一個記憶體位置（編號）"><a href="#2-symbol指到同一個記憶體位置（編號）" class="headerlink" title="2. symbol指到同一個記憶體位置（編號）"></a>2. symbol指到同一個記憶體位置（編號）</h3><p>  字串每次的記憶體位置是不固定的，而符號是同一個記憶體位置。<br>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">5.times do</span><br><span class="line">  puts &quot;abcd&quot;.object_id</span><br><span class="line">end</span><br></pre></td></tr></table></figure><br>   結果分別是：720 740 760 780 800<br>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">5.times do</span><br><span class="line">  puts :abcd.object_id</span><br><span class="line">end</span><br></pre></td></tr></table></figure><br>   結果都是：1920348</p><p>   *每個人電腦的記憶體位置顯示都會有差異喔！<br>   我的例子是用Replit執行的結果。</p><p>   *補充：所有數字的位置都是奇數，其他放偶數。</p><h3 id="3-symbol的效能比較好"><a href="#3-symbol的效能比較好" class="headerlink" title="3. symbol的效能比較好"></a>3. symbol的效能比較好</h3><p>   程式在比較符號是否相同時，<br>   是直接比對這物件的object_id是否相同，<br>   但在比較字串時，<br>   它是一個一個字母比對，<br>   因此比較的時間會隨著字母的數量而增加。</p><p>   *補充：但因為字串位置是暫存，長期來說，不會佔記憶體位置。</p><h2 id="hash-v-s-陣列"><a href="#hash-v-s-陣列" class="headerlink" title="hash v.s 陣列"></a>hash v.s 陣列</h2><ol><li>結構不同</li><li>存取方式不同</li><li>沒有順序</li></ol><h2 id="題目"><a href="#題目" class="headerlink" title="題目"></a>題目</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = [1, 2, 3, 1, 2, 1, 3, 1, 2, 3, 4, 5, 6]</span><br><span class="line">#請計算在陣列 a 中，每個數字出現的次數。</span><br><span class="line"></span><br><span class="line">p a.tally</span><br></pre></td></tr></table></figure><h2 id="ruby的省略"><a href="#ruby的省略" class="headerlink" title="ruby的省略"></a>ruby的省略</h2><p>為了更像人在講話</p><p>可「<strong>適時</strong>」省略（）{} return(最後一行的執行結果)</p><h3 id="回傳值意義？"><a href="#回傳值意義？" class="headerlink" title="回傳值意義？"></a>回傳值意義？</h3><p>為了交回控制權</p><h3 id="與"><a href="#與" class="headerlink" title="?與!"></a>?與!</h3><ol><li>放在物件後面</li><li>?不成文默契：回傳true 或 false</li><li>!不成文默契：有你意想不到的結果，要注意</li></ol><h2 id="Rakefile"><a href="#Rakefile" class="headerlink" title="Rakefile"></a>Rakefile</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">desc &quot;這是測試&quot; #描述</span><br><span class="line"></span><br><span class="line">task :hi do</span><br><span class="line">    puts &quot;hello world&quot;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">desc &quot;hey123&quot;</span><br><span class="line">task :hey =&gt; :hi do #相依性</span><br><span class="line">    puts &quot;hey!!&quot;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">#初始</span><br><span class="line">task :default =&gt; :hi </span><br></pre></td></tr></table></figure><h2 id="Block"><a href="#Block" class="headerlink" title="Block"></a>Block</h2><p>不會主動執行的程式區塊，無法單獨存活。</p><h2 id="題目-1"><a href="#題目-1" class="headerlink" title="題目"></a>題目</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def my_map(arr)</span><br><span class="line">  result = []</span><br><span class="line">  arr.each &#123; |x| result &lt;&lt;( yield x) &#125;</span><br><span class="line">  result</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">list = [1, 2, 3, 4, 5]</span><br><span class="line">result = my_map(list) &#123; |x| x * 2 &#125;</span><br><span class="line"></span><br><span class="line">p result # [2, 4, 6, 8, 10]</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def my_filter(arr)</span><br><span class="line">  result = []</span><br><span class="line">  arr.each &#123; |x| result &lt;&lt; x if yield x &#125;</span><br><span class="line">  result</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">list = [1, 2, 3, 4, 5]</span><br><span class="line">result = my_filter(list) &#123; |x| x &gt; 2 &#125;</span><br><span class="line"></span><br><span class="line">p result # [3, 4, 5]</span><br></pre></td></tr></table></figure><h2 id="有一些方法可以使block物件化："><a href="#有一些方法可以使block物件化：" class="headerlink" title="有一些方法可以使block物件化："></a>有一些方法可以使block物件化：</h2><h3 id="Proc"><a href="#Proc" class="headerlink" title="Proc"></a>Proc</h3><p>使用 Proc 類別把 Block 物件化</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">say_hello_to = Proc.new &#123; |name| puts &quot;hi #&#123;name&#125;&quot;&#125;  </span><br></pre></td></tr></table></figure><p>呼叫Proc 方式</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">say_hello_to.call(&quot;小花&quot;)    # .call</span><br><span class="line">say_hello_to.(&quot;小花&quot;)        # .小括號</span><br><span class="line">say_hello_to[&quot;小花&quot;]         # 中括號</span><br><span class="line">say_hello_to === &quot;小花&quot;      # 三個等號</span><br><span class="line">say_hello_to.yield &quot;小花&quot;    # .yield</span><br></pre></td></tr></table></figure><h3 id="lambda"><a href="#lambda" class="headerlink" title="lambda"></a>lambda</h3><p>Proc 類別下，還有一個lambda可以把 Block 物件化，<br>但又有些許不同。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">say_hello_to = lambda &#123; |name| puts &quot;hi #&#123;name&#125;&quot;&#125; </span><br></pre></td></tr></table></figure><p>或是</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">say_hello_to = -&gt;(name) &#123; puts &quot;hi #&#123;name&#125;&quot;&#125; </span><br></pre></td></tr></table></figure><p>這兩種方式都可以把 Block 物件化，<br>呼叫方式和Proc 相同，<br>不過執行上會有些許不同</p><hr>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h2 id=&quot;符號v-s-字串&quot;&gt;&lt;a href=&quot;#符號v-s-字串&quot; class=&quot;headerlink&quot; title=&quot;符號v.s.字串&quot;&gt;&lt;/a&gt;符號v.s.字串&lt;/h2&gt;&lt;p&gt;符號：有名字的物件，是一種值&lt;/p&gt;
-&lt;h3 id=&quot;1-symbol的內容不能改變&quot;&gt;&lt;a</summary>
-      
+    <summary type="html">Ruby on Rails</summary>
     
     
     
@@ -59,16 +55,12 @@
     <link href="https://chocolin1226.github.io/2022/11/06/RoR_01/"/>
     <id>https://chocolin1226.github.io/2022/11/06/RoR_01/</id>
     <published>2022-11-06T08:33:15.000Z</published>
-    <updated>2022-11-16T18:05:15.612Z</updated>
+    <updated>2022-11-16T18:10:06.569Z</updated>
     
     <content type="html"><![CDATA[<h2 id="為什麼使用變數？"><a href="#為什麼使用變數？" class="headerlink" title="為什麼使用變數？"></a>為什麼使用變數？</h2><p>賦予值意義。</p><h2 id="REPL-為何使用？"><a href="#REPL-為何使用？" class="headerlink" title="REPL?為何使用？"></a>REPL?為何使用？</h2><p>即時讀寫無窮迴圈，方便測試一些短方法。</p><h2 id="常數與變數有何不同？為何如此設計？"><a href="#常數與變數有何不同？為何如此設計？" class="headerlink" title="常數與變數有何不同？為何如此設計？"></a>常數與變數有何不同？為何如此設計？</h2><p>常數大寫開頭。<br>其他語言常數不可改，ruby可以改，只是會跳警告。</p><p>因為ruby的類別是用常數命名，<br>類別會需要擴充功能，<br>如果常數不能改就無法擴充。</p><h2 id="if倒裝？使用時機？相反詞？慣用寫法？"><a href="#if倒裝？使用時機？相反詞？慣用寫法？" class="headerlink" title="if倒裝？使用時機？相反詞？慣用寫法？"></a>if倒裝？使用時機？相反詞？慣用寫法？</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">puts <span class="string">&quot;在家&quot;</span> <span class="keyword">if</span> weather == <span class="string">&quot;下雨&quot;</span> </span><br></pre></td></tr></table></figure><p><strong>使用時機：</strong><br>如果可以一句寫完，<br>或為了強調結果。</p><p><strong>相反詞：</strong>（不推薦使用）<br><code>unless</code> 或是 <code>if not</code></p><p><strong>慣用寫法：</strong></p><ol><li>正向表述為主</li><li>盡量不用寫<code>else</code></li><li>注意可讀性</li></ol><h2 id="例外處理？"><a href="#例外處理？" class="headerlink" title="例外處理？"></a>例外處理？</h2><ul><li>讓方法專心在輸入值與輸出值的關係，判斷錯誤可以另外判斷。</li></ul><h2 id="為何要迴圈？"><a href="#為何要迴圈？" class="headerlink" title="為何要迴圈？"></a>為何要迴圈？</h2><p>處理重複的事</p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h2 id=&quot;為什麼使用變數？&quot;&gt;&lt;a href=&quot;#為什麼使用變數？&quot; class=&quot;headerlink&quot; title=&quot;為什麼使用變數？&quot;&gt;&lt;/a&gt;為什麼使用變數？&lt;/h2&gt;&lt;p&gt;賦予值意義。&lt;/p&gt;
-&lt;h2 id=&quot;REPL-為何使用？&quot;&gt;&lt;a href=&quot;#REPL-</summary>
-      
+    <summary type="html">Ruby on Rails</summary>
     
     
     
@@ -80,15 +72,12 @@
     <link href="https://chocolin1226.github.io/2022/11/05/JS_03/"/>
     <id>https://chocolin1226.github.io/2022/11/05/JS_03/</id>
     <published>2022-11-05T08:33:15.000Z</published>
-    <updated>2022-11-16T18:05:09.490Z</updated>
+    <updated>2022-11-16T18:09:58.912Z</updated>
     
     <content type="html"><![CDATA[<h2 id="addEventlistner的-“click”事件-運作方式"><a href="#addEventlistner的-“click”事件-運作方式" class="headerlink" title="addEventlistner的 “click”事件 運作方式"></a>addEventlistner的 “click”事件 運作方式</h2><p><strong>Capturing → Targeting → Bubbling</strong></p><ol><li>target ： 事件流最後Ｕturn 回來碰到的對象</li><li>currenttarget : 事件流註冊的對象就是currenttarget</li></ol><p><img src="https://i.imgur.com/gzrsJyh.png"></p><p>預設事件發生在冒泡階段(Bubbling)，先回傳B再回傳A；</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">addEventlistner(&quot;click&quot;,()=&gt;&#123;&#125;,false)</span><br></pre></td></tr></table></figure><p>如果改成true，會在捕獲階段(Capturing)就執行，先回傳A再回傳B。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">addEventlistner(&quot;click&quot;,()=&gt;&#123;&#125;,true)</span><br></pre></td></tr></table></figure><p>一次只能選一條路走</p><p>若是想讓事件停止傳播 可使用StopPropagation</p><p>＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝</p><h2 id="Scope-可視範圍-注意var、let、const的scope範圍"><a href="#Scope-可視範圍-注意var、let、const的scope範圍" class="headerlink" title="Scope(可視範圍): 注意var、let、const的scope範圍"></a>Scope(可視範圍): 注意var、let、const的scope範圍</h2><p>1.Scope chain(範圍鏈): 當前範圍找不到就會往外面找，只有JavaScript、Python才有</p><p>2.lexical scope(詞彙範圍)：scope跟它寫在「哪裡」有關！！！<br>＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br><strong>每一個物件都有一種屬性__proto__</strong><br> <strong>如果沒有我們要找的屬性，先從自己開始找，然後從自己的proto往其他的物件尋找。直到找到有為止 or 沒有找到&#x3D;&gt;(回傳undifined)</strong></p><p><strong>每個function都有prototype屬性，除了箭頭函式 &#x3D;&gt;{ }。</strong><br>且prototype預設是空白物件{ }</p><p>❋ 另外需要注意ASI &#x3D; Auto Semicolon Insertion，自動加上分號;<br>這個機制，<br>如果return (<br>    要回傳的內容<br>)。<br>這樣就可以正確執行。return 沒有用()的話，會出現錯誤。</p><p><a href="https://github.com/lydiahallie/javascript-questions">lydia小測驗 關鍵字:prototype</a><br>＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝</p><h2 id="this-百變怪（歡迎大家踴躍矯正，補充舉個例＾＾）"><a href="#this-百變怪（歡迎大家踴躍矯正，補充舉個例＾＾）" class="headerlink" title="this 百變怪（歡迎大家踴躍矯正，補充舉個例＾＾）"></a>this 百變怪（歡迎大家踴躍矯正，補充舉個例＾＾）</h2><ol><li>誰呼叫就是指向誰</li><li>如果自己沒人呼叫他，就是自己本身，全域物件，沒有呼叫主詞都是全域。</li><li>箭頭函示沒有自己得this，所以自己會指向全域物件</li><li>新增物件是否有用new，有new會轉向當前function裡的this&#x3D;&gt;{}，若函數本身若不用new丟入引數，會使this會指向全域，呼叫函數會undefine</li><li>用call,apply,bind會強迫去取分，也就是會強迫引用當前輸入數值，並不會指向呼叫本人內的數值</li></ol><h2 id="array-prototype-funtion"><a href="#array-prototype-funtion" class="headerlink" title="array.prototype.funtion()"></a>array.prototype.funtion()</h2><ol><li>函數是物件的一等公民，他有物件__proto__屬性和本身的prototype屬性，</li><li>所有物件都有__proto__ 屬性會把相關物件串起來，形成鏈的連結，順著源頭一層一層往裡找</li><li>new會把後方函數的串連起來，通過prototype會連結至函數本身，呼叫的原型this去建立，而this此時會指向被呼叫原型的函數本身</li></ol>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h2 id=&quot;addEventlistner的-“click”事件-運作方式&quot;&gt;&lt;a href=&quot;#addEventlistner的-“click”事件-運作方式&quot; class=&quot;headerlink&quot; title=&quot;addEventlistner的 “click”事件 運作方</summary>
-      
+    <summary type="html">JavaScript</summary>
     
     
     
@@ -100,15 +89,12 @@
     <link href="https://chocolin1226.github.io/2022/11/04/JS_02/"/>
     <id>https://chocolin1226.github.io/2022/11/04/JS_02/</id>
     <published>2022-11-04T08:33:15.000Z</published>
-    <updated>2022-11-16T18:05:03.362Z</updated>
+    <updated>2022-11-16T18:09:51.106Z</updated>
     
     <content type="html"><![CDATA[<h2 id="by-value"><a href="#by-value" class="headerlink" title="by value:"></a>by value:</h2><p><strong>一般原始型別（primitive type：Boolean, String, Number, null, undefined）只是給值，不影響原本址的內容。</strong><br>let a &#x3D; 1;<br>let b &#x3D; a;<br>b &#x3D; 2<br>console.log(a);<br>&#x3D;&gt;1</p><h2 id="by-reference"><a href="#by-reference" class="headerlink" title="by reference:"></a>by reference:</h2><p><strong>物件型別（Objects type：Object, Array, Function）是給址，因此會影響原本址的內容。</strong><br>let a &#x3D;[1];<br>let b &#x3D; a;<br>b[0] &#x3D; 2<br>console.log(a);<br>&#x3D;&gt;[2]</p><p>要注意的是<br>let a &#x3D;[1];<br>let b &#x3D; a;<br>b&#x3D; [2]<br>console.log(a);<br>&#x3D;&gt;[1]</p><p>看得出差別嗎？<br>下面的例子b&#x3D;[2]是重新給b一個新的址（新的陣列），<br>因此不會影響原本a的址的內容。</p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h2 id=&quot;by-value&quot;&gt;&lt;a href=&quot;#by-value&quot; class=&quot;headerlink&quot; title=&quot;by value:&quot;&gt;&lt;/a&gt;by value:&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;一般原始型別（primitive type：Boolean, Strin</summary>
-      
+    <summary type="html">JavaScript</summary>
     
     
     
@@ -120,16 +106,12 @@
     <link href="https://chocolin1226.github.io/2022/11/03/JS_01/"/>
     <id>https://chocolin1226.github.io/2022/11/03/JS_01/</id>
     <published>2022-11-03T08:33:15.000Z</published>
-    <updated>2022-11-16T18:04:41.763Z</updated>
+    <updated>2022-11-16T18:09:42.268Z</updated>
     
     <content type="html"><![CDATA[<p><strong>共同：</strong><br><strong>都只會找到一個符合的元素就結束。</strong></p><h2 id="find-v-s-findIndex"><a href="#find-v-s-findIndex" class="headerlink" title="find v.s. findIndex"></a>find v.s. findIndex</h2><p><strong>共同：</strong><br>搜尋條件可放函式</p><p><strong>差異：</strong><br>find返回元素名稱</p><p>findIndex返回元素索引值（元素在陣列第幾個位置）</p><h2 id="indexOf-v-s-lastIndexOf"><a href="#indexOf-v-s-lastIndexOf" class="headerlink" title="indexOf v.s. lastIndexOf"></a>indexOf v.s. lastIndexOf</h2><p><strong>共同：</strong><br>搜尋條件「不可」放函式</p><p>皆返回元素索引值</p><p><strong>差異：</strong><br>indexOf返回「第一個」符合的元素索引值</p><p>lastIndexOf返回「最後一個」符合的元素索引值</p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;&lt;strong&gt;共同：&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;都只會找到一個符合的元素就結束。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;find-v-s-findIndex&quot;&gt;&lt;a href=&quot;#find-v-s-findIndex&quot; class=&quot;headerlink</summary>
-      
+    <summary type="html">JavaScript</summary>
     
     
     
@@ -141,15 +123,12 @@
     <link href="https://chocolin1226.github.io/2022/11/02/HTML_01/"/>
     <id>https://chocolin1226.github.io/2022/11/02/HTML_01/</id>
     <published>2022-11-02T08:33:15.000Z</published>
-    <updated>2022-11-16T18:04:35.443Z</updated>
+    <updated>2022-11-16T18:09:16.448Z</updated>
     
     <content type="html"><![CDATA[<h2 id="下載-VScode-延伸模組"><a href="#下載-VScode-延伸模組" class="headerlink" title="下載 VScode 延伸模組"></a>下載 VScode 延伸模組</h2><p>Auto Rename Tag<br>Chinese Lorem<br>CSS Variable Autocomplete<br>IntelliSense for CSS class names in HTML<br>Live Preview<br>Live Server<br>Path Intellisense</p><h2 id="VScode-快捷設定"><a href="#VScode-快捷設定" class="headerlink" title="VScode 快捷設定"></a>VScode 快捷設定</h2><p>左下齒輪-Keyboard Shortcuts-zoom-(1)Editor Font Zoom in(Ctrl +) (2)Editor Font Zoom out(Ctrl -)<br>左下齒輪-Settings-(1)wrap-Editor:Word Wrap-on (2)emmettab-v<br>VScode 快捷鍵<br>Ctrl + n 開新檔<br>Ctrl + k 再 m 修改語言格式<br>div&gt;p 產生一個 div 包含 P 段落<br>div+p 產生一個 div 再產生一個 P 段落<br>p<em>10 產生 10 個段落<br>p&gt;lorem 產生一個包含假文段落<br>p</em>10&gt;lorem 產生 10 個包含假文段落<br>lorem10 產生 10 個字的假文<br>ctlorem 產生中文假文</p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h2 id=&quot;下載-VScode-延伸模組&quot;&gt;&lt;a href=&quot;#下載-VScode-延伸模組&quot; class=&quot;headerlink&quot; title=&quot;下載 VScode 延伸模組&quot;&gt;&lt;/a&gt;下載 VScode 延伸模組&lt;/h2&gt;&lt;p&gt;Auto Rename Tag&lt;br&gt;Chi</summary>
-      
+    <summary type="html">HTML</summary>
     
     
     
@@ -161,12 +140,12 @@
     <link href="https://chocolin1226.github.io/2022/11/01/Git_01/"/>
     <id>https://chocolin1226.github.io/2022/11/01/Git_01/</id>
     <published>2022-11-01T08:33:15.000Z</published>
-    <updated>2022-11-16T18:00:44.095Z</updated>
+    <updated>2022-11-16T18:09:08.077Z</updated>
     
     <content type="html"><![CDATA[<h2 id="解釋"><a href="#解釋" class="headerlink" title="解釋"></a>解釋</h2><p>Git ：分散式的版本控制系統<br>集中式：集中上傳到同一地點，從同一地點下載<br>分散式：本地端可指定給任一個本地端<br>集中式缺點：集中的端點壞掉就全部不能用了。<br>Git 同時支援本地與遠端操作。</p><h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir git-demo #新增專案資料夾</span><br><span class="line">$ cd git-demo #轉到此資料夾內</span><br><span class="line">$ git init #初始化</span><br><span class="line">$ git status #查狀態</span><br><span class="line">$ git add xxx.xxx #將 xxx.xxx 加入暫存區</span><br><span class="line">$ git commit -m&quot;ooo&quot; #存入本地儲存庫，並將此次版本命名為 ooo</span><br></pre></td></tr></table></figure><h2 id="增加-VScode-延伸模組"><a href="#增加-VScode-延伸模組" class="headerlink" title="增加 VScode 延伸模組"></a>增加 VScode 延伸模組</h2><p>Git Graph<br>Remote Development<br>WSL</p>]]></content>
     
     
-    <summary type="html">Git-開新專案 and 基本使用</summary>
+    <summary type="html">Git</summary>
     
     
     
