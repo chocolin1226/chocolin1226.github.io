@@ -2533,7 +2533,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #eb79cf;
+  background: #6cc83c;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2554,7 +2554,7 @@ ul.breadcrumb li:last-child {
   white-space: nowrap;
 }
 body {
-  background: url("https://picsum.photos/300/200?random=22");
+  background: url("https://picsum.photos/1500/1500?random=22");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
