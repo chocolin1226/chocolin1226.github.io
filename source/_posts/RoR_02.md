@@ -2,7 +2,7 @@
 title: Ruby on Rails-Ruby 複習
 date: 2022-11-07 16:33:15
 tags: 
-description: 
+description: Ruby on Rails
 ---
 
 ## 符號v.s.字串
