@@ -2625,7 +2625,7 @@ ul.breadcrumb li:last-child {
   }
 }
 body {
-  background: url("https://picsum.photos/1500/1500?random=22");
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://picsum.photos/1500/1500?random=22");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
