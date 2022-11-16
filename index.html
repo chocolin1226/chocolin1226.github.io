@@ -71,6 +71,48 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-JS_02" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/11/04/JS_02/" class="article-date">
+  <time class="dt-published" datetime="2022-11-04T08:33:15.000Z" itemprop="datePublished">2022-11-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/11/04/JS_02/">JavaScript-by value/by reference給值/給址</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="by-value"><a href="#by-value" class="headerlink" title="by value:"></a>by value:</h2><p><strong>一般原始型別（primitive type：Boolean, String, Number, null, undefined）只是給值，不影響原本址的內容。</strong><br>let a &#x3D; 1;<br>let b &#x3D; a;<br>b &#x3D; 2<br>console.log(a);<br>&#x3D;&gt;1</p>
+<h2 id="by-reference"><a href="#by-reference" class="headerlink" title="by reference:"></a>by reference:</h2><p><strong>物件型別（Objects type：Object, Array, Function）是給址，因此會影響原本址的內容。</strong><br>let a &#x3D;[1];<br>let b &#x3D; a;<br>b[0] &#x3D; 2<br>console.log(a);<br>&#x3D;&gt;[2]</p>
+<p>要注意的是<br>let a &#x3D;[1];<br>let b &#x3D; a;<br>b&#x3D; [2]<br>console.log(a);<br>&#x3D;&gt;[1]</p>
+<p>看得出差別嗎？<br>下面的例子b&#x3D;[2]是重新給b一個新的址（新的陣列），<br>因此不會影響原本a的址的內容。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://chocolin1226.github.io/2022/11/04/JS_02/" data-id="clajj3aif0000lp6icbhg1b1u" data-title="JavaScript-by value/by reference給值/給址" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-JS_01" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/11/03/JS_01/" class="article-date">
@@ -85,7 +127,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/11/03/JS_01/">找陣列內元素方法比較 find, findIndex, indexOf, lastIndexOf</a>
+      <a class="p-name article-title" href="/2022/11/03/JS_01/">JavaScript-找陣列內元素方法比較 find, findIndex, indexOf, lastIndexOf</a>
     </h1>
   
 
@@ -105,7 +147,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://chocolin1226.github.io/2022/11/03/JS_01/" data-id="clajj0jno0000jk6iajiyhnth" data-title="找陣列內元素方法比較 find, findIndex, indexOf, lastIndexOf" class="article-share-link">Share</a>
+      <a data-url="https://chocolin1226.github.io/2022/11/03/JS_01/" data-id="clajj0jno0000jk6iajiyhnth" data-title="JavaScript-找陣列內元素方法比較 find, findIndex, indexOf, lastIndexOf" class="article-share-link">Share</a>
       
       
       
@@ -230,7 +272,11 @@
       <ul>
         
           <li>
-            <a href="/2022/11/03/JS_01/">找陣列內元素方法比較 find, findIndex, indexOf, lastIndexOf</a>
+            <a href="/2022/11/04/JS_02/">JavaScript-by value/by reference給值/給址</a>
+          </li>
+        
+          <li>
+            <a href="/2022/11/03/JS_01/">JavaScript-找陣列內元素方法比較 find, findIndex, indexOf, lastIndexOf</a>
           </li>
         
           <li>

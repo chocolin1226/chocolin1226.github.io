@@ -6,7 +6,7 @@
   <link href="https://chocolin1226.github.io/atom.xml" rel="self"/>
   
   <link href="https://chocolin1226.github.io/"/>
-  <updated>2022-11-16T10:54:19.160Z</updated>
+  <updated>2022-11-16T10:55:30.227Z</updated>
   <id>https://chocolin1226.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>找陣列內元素方法比較 find, findIndex, indexOf, lastIndexOf</title>
+    <title>JavaScript-by value/by reference給值/給址</title>
+    <link href="https://chocolin1226.github.io/2022/11/04/JS_02/"/>
+    <id>https://chocolin1226.github.io/2022/11/04/JS_02/</id>
+    <published>2022-11-04T08:33:15.000Z</published>
+    <updated>2022-11-16T10:55:30.227Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="by-value"><a href="#by-value" class="headerlink" title="by value:"></a>by value:</h2><p><strong>一般原始型別（primitive type：Boolean, String, Number, null, undefined）只是給值，不影響原本址的內容。</strong><br>let a &#x3D; 1;<br>let b &#x3D; a;<br>b &#x3D; 2<br>console.log(a);<br>&#x3D;&gt;1</p><h2 id="by-reference"><a href="#by-reference" class="headerlink" title="by reference:"></a>by reference:</h2><p><strong>物件型別（Objects type：Object, Array, Function）是給址，因此會影響原本址的內容。</strong><br>let a &#x3D;[1];<br>let b &#x3D; a;<br>b[0] &#x3D; 2<br>console.log(a);<br>&#x3D;&gt;[2]</p><p>要注意的是<br>let a &#x3D;[1];<br>let b &#x3D; a;<br>b&#x3D; [2]<br>console.log(a);<br>&#x3D;&gt;[1]</p><p>看得出差別嗎？<br>下面的例子b&#x3D;[2]是重新給b一個新的址（新的陣列），<br>因此不會影響原本a的址的內容。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;by-value&quot;&gt;&lt;a href=&quot;#by-value&quot; class=&quot;headerlink&quot; title=&quot;by value:&quot;&gt;&lt;/a&gt;by value:&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;一般原始型別（primitive type：Boolean, Strin</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript-找陣列內元素方法比較 find, findIndex, indexOf, lastIndexOf</title>
     <link href="https://chocolin1226.github.io/2022/11/03/JS_01/"/>
     <id>https://chocolin1226.github.io/2022/11/03/JS_01/</id>
     <published>2022-11-03T08:33:15.000Z</published>
-    <updated>2022-11-16T10:54:19.160Z</updated>
+    <updated>2022-11-16T10:55:36.511Z</updated>
     
     <content type="html"><![CDATA[<p><strong>共同：</strong><br><strong>都只會找到一個符合的元素就結束。</strong></p><h2 id="find-v-s-findIndex"><a href="#find-v-s-findIndex" class="headerlink" title="find v.s. findIndex"></a>find v.s. findIndex</h2><p><strong>共同：</strong><br>搜尋條件可放函式</p><p><strong>差異：</strong><br>find返回元素名稱</p><p>findIndex返回元素索引值（元素在陣列第幾個位置）</p><h2 id="indexOf-v-s-lastIndexOf"><a href="#indexOf-v-s-lastIndexOf" class="headerlink" title="indexOf v.s. lastIndexOf"></a>indexOf v.s. lastIndexOf</h2><p><strong>共同：</strong><br>搜尋條件「不可」放函式</p><p>皆返回元素索引值</p><p><strong>差異：</strong><br>indexOf返回「第一個」符合的元素索引值</p><p>lastIndexOf返回「最後一個」符合的元素索引值</p>]]></content>
     
