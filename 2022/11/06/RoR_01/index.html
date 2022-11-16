@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Ruby on Rails-New Rails | Choco</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="為什麼使用變數？賦予值意義。 REPL?為何使用？即時讀寫無窮迴圈，方便測試一些短方法。 常數與變數有何不同？為何如此設計？常數大寫開頭。其他語言常數不可改，ruby可以改，只是會跳警告。 因為ruby的類別是用常數命名，類別會需要擴充功能，如果常數不能改就無法擴充。 if倒裝？使用時機？相反詞？慣用寫法？1puts &quot;在家&quot; if weather &#x3D;&#x3D; &quot;下雨&amp;qu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ruby on Rails-New Rails">
+<meta property="og:url" content="https://chocolin1226.github.io/2022/11/06/RoR_01/index.html">
+<meta property="og:site_name" content="Choco">
+<meta property="og:description" content="為什麼使用變數？賦予值意義。 REPL?為何使用？即時讀寫無窮迴圈，方便測試一些短方法。 常數與變數有何不同？為何如此設計？常數大寫開頭。其他語言常數不可改，ruby可以改，只是會跳警告。 因為ruby的類別是用常數命名，類別會需要擴充功能，如果常數不能改就無法擴充。 if倒裝？使用時機？相反詞？慣用寫法？1puts &quot;在家&quot; if weather &#x3D;&#x3D; &quot;下雨&amp;qu">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-11-06T08:33:15.000Z">
+<meta property="article:modified_time" content="2022-11-16T10:57:50.505Z">
+<meta property="article:author" content="Choco">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Choco" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Choco</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://chocolin1226.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-RoR_01" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/11/06/RoR_01/" class="article-date">
+  <time class="dt-published" datetime="2022-11-06T08:33:15.000Z" itemprop="datePublished">2022-11-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Ruby on Rails-New Rails
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="為什麼使用變數？"><a href="#為什麼使用變數？" class="headerlink" title="為什麼使用變數？"></a>為什麼使用變數？</h2><p>賦予值意義。</p>
+<h2 id="REPL-為何使用？"><a href="#REPL-為何使用？" class="headerlink" title="REPL?為何使用？"></a>REPL?為何使用？</h2><p>即時讀寫無窮迴圈，方便測試一些短方法。</p>
+<h2 id="常數與變數有何不同？為何如此設計？"><a href="#常數與變數有何不同？為何如此設計？" class="headerlink" title="常數與變數有何不同？為何如此設計？"></a>常數與變數有何不同？為何如此設計？</h2><p>常數大寫開頭。<br>其他語言常數不可改，ruby可以改，只是會跳警告。</p>
+<p>因為ruby的類別是用常數命名，<br>類別會需要擴充功能，<br>如果常數不能改就無法擴充。</p>
+<h2 id="if倒裝？使用時機？相反詞？慣用寫法？"><a href="#if倒裝？使用時機？相反詞？慣用寫法？" class="headerlink" title="if倒裝？使用時機？相反詞？慣用寫法？"></a>if倒裝？使用時機？相反詞？慣用寫法？</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">puts <span class="string">&quot;在家&quot;</span> <span class="keyword">if</span> weather == <span class="string">&quot;下雨&quot;</span> </span><br></pre></td></tr></table></figure>
+
+<p><strong>使用時機：</strong><br>如果可以一句寫完，<br>或為了強調結果。</p>
+<p><strong>相反詞：</strong>（不推薦使用）<br><code>unless</code> 或是 <code>if not</code></p>
+<p><strong>慣用寫法：</strong></p>
+<ol>
+<li>正向表述為主</li>
+<li>盡量不用寫<code>else</code></li>
+<li>注意可讀性</li>
+</ol>
+<h2 id="例外處理？"><a href="#例外處理？" class="headerlink" title="例外處理？"></a>例外處理？</h2><ul>
+<li>讓方法專心在輸入值與輸出值的關係，判斷錯誤可以另外判斷。</li>
+</ul>
+<h2 id="為何要迴圈？"><a href="#為何要迴圈？" class="headerlink" title="為何要迴圈？"></a>為何要迴圈？</h2><p>處理重複的事</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://chocolin1226.github.io/2022/11/06/RoR_01/" data-id="clajj598v0002nz6i9esy2p1i" data-title="Ruby on Rails-New Rails" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/11/07/RoR_02/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Ruby on Rails-Ruby 複習
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/11/05/JS_03/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">JavaScript-物件導向 第6堂</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/11/07/RoR_02/">Ruby on Rails-Ruby 複習</a>
+          </li>
+        
+          <li>
+            <a href="/2022/11/06/RoR_01/">Ruby on Rails-New Rails</a>
+          </li>
+        
+          <li>
+            <a href="/2022/11/05/JS_03/">JavaScript-物件導向 第6堂</a>
+          </li>
+        
+          <li>
+            <a href="/2022/11/04/JS_02/">JavaScript-by value/by reference給值/給址</a>
+          </li>
+        
+          <li>
+            <a href="/2022/11/03/JS_01/">JavaScript-找陣列內元素方法比較 find, findIndex, indexOf, lastIndexOf</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 Choco<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
