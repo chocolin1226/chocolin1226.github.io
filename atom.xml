@@ -6,7 +6,7 @@
   <link href="https://chocolin1226.github.io/atom.xml" rel="self"/>
   
   <link href="https://chocolin1226.github.io/"/>
-  <updated>2022-11-16T10:57:56.183Z</updated>
+  <updated>2022-11-16T10:59:34.191Z</updated>
   <id>https://chocolin1226.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ruby on Rails-MCV的Model</title>
+    <link href="https://chocolin1226.github.io/2022/11/08/RoR_03/"/>
+    <id>https://chocolin1226.github.io/2022/11/08/RoR_03/</id>
+    <published>2022-11-08T08:33:15.000Z</published>
+    <updated>2022-11-16T10:59:34.191Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="What-is-Model"><a href="#What-is-Model" class="headerlink" title="What is Model?"></a>What is Model?</h2><p>模組，將鬆散的資料表達成有意義的資訊。</p><h2 id="How-to-Modeling-建模"><a href="#How-to-Modeling-建模" class="headerlink" title="How to Modeling(建模)?"></a>How to Modeling(建模)?</h2><p>將眾多Data合成(composite)抽象的Value Object</p><p>將眾多Value合成實體(Entity：有id,獨一無二,狀態可改)</p><p>Entity有事件發生時會改變什麼狀態</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;What-is-Model&quot;&gt;&lt;a href=&quot;#What-is-Model&quot; class=&quot;headerlink&quot; title=&quot;What is Model?&quot;&gt;&lt;/a&gt;What is Model?&lt;/h2&gt;&lt;p&gt;模組，將鬆散的資料表達成有意義的資訊。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Ruby on Rails-Ruby 複習</title>
