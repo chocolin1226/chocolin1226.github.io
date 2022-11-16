@@ -137,26 +137,6 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://chocolin1226.github.io/2022/11/16/Git_new/"/>
-    <id>https://chocolin1226.github.io/2022/11/16/Git_new/</id>
-    <published>2022-11-16T10:21:34.203Z</published>
-    <updated>2022-11-16T10:21:34.205Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Git-開新專案-and-基本使用"><a href="#Git-開新專案-and-基本使用" class="headerlink" title="Git-開新專案 and 基本使用"></a>Git-開新專案 and 基本使用</h1><h2 id="解釋"><a href="#解釋" class="headerlink" title="解釋"></a>解釋</h2><p>Git ：分散式的版本控制系統<br>集中式：集中上傳到同一地點，從同一地點下載<br>分散式：本地端可指定給任一個本地端<br>集中式缺點：集中的端點壞掉就全部不能用了。<br>Git 同時支援本地與遠端操作。</p><h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir git-demo #新增專案資料夾</span><br><span class="line">$ cd git-demo #轉到此資料夾內</span><br><span class="line">$ git init #初始化</span><br><span class="line">$ git status #查狀態</span><br><span class="line">$ git add xxx.xxx #將 xxx.xxx 加入暫存區</span><br><span class="line">$ git commit -m&quot;ooo&quot; #存入本地儲存庫，並將此次版本命名為 ooo</span><br></pre></td></tr></table></figure><h2 id="增加-VScode-延伸模組"><a href="#增加-VScode-延伸模組" class="headerlink" title="增加 VScode 延伸模組"></a>增加 VScode 延伸模組</h2><p>Git Graph<br>Remote Development<br>WSL</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Git-開新專案-and-基本使用&quot;&gt;&lt;a href=&quot;#Git-開新專案-and-基本使用&quot; class=&quot;headerlink&quot; title=&quot;Git-開新專案 and 基本使用&quot;&gt;&lt;/a&gt;Git-開新專案 and 基本使用&lt;/h1&gt;&lt;h2 id=&quot;解釋&quot;&gt;&lt;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>我的第一篇部落格文章</title>
     <link href="https://chocolin1226.github.io/2022/11/16/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E9%83%A8%E8%90%BD%E6%A0%BC%E6%96%87%E7%AB%A0/"/>
     <id>https://chocolin1226.github.io/2022/11/16/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E9%83%A8%E8%90%BD%E6%A0%BC%E6%96%87%E7%AB%A0/</id>
@@ -182,6 +162,26 @@
       
       
     <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Git-開新專案 and 基本使用</title>
+    <link href="https://chocolin1226.github.io/2022/11/01/Git_new/"/>
+    <id>https://chocolin1226.github.io/2022/11/01/Git_new/</id>
+    <published>2022-11-01T08:33:15.000Z</published>
+    <updated>2022-11-16T10:28:49.101Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Git-開新專案-and-基本使用"><a href="#Git-開新專案-and-基本使用" class="headerlink" title="Git-開新專案 and 基本使用"></a>Git-開新專案 and 基本使用</h1><h2 id="解釋"><a href="#解釋" class="headerlink" title="解釋"></a>解釋</h2><p>Git ：分散式的版本控制系統<br>集中式：集中上傳到同一地點，從同一地點下載<br>分散式：本地端可指定給任一個本地端<br>集中式缺點：集中的端點壞掉就全部不能用了。<br>Git 同時支援本地與遠端操作。</p><h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir git-demo #新增專案資料夾</span><br><span class="line">$ cd git-demo #轉到此資料夾內</span><br><span class="line">$ git init #初始化</span><br><span class="line">$ git status #查狀態</span><br><span class="line">$ git add xxx.xxx #將 xxx.xxx 加入暫存區</span><br><span class="line">$ git commit -m&quot;ooo&quot; #存入本地儲存庫，並將此次版本命名為 ooo</span><br></pre></td></tr></table></figure><h2 id="增加-VScode-延伸模組"><a href="#增加-VScode-延伸模組" class="headerlink" title="增加 VScode 延伸模組"></a>增加 VScode 延伸模組</h2><p>Git Graph<br>Remote Development<br>WSL</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Git-開新專案-and-基本使用&quot;&gt;&lt;a href=&quot;#Git-開新專案-and-基本使用&quot; class=&quot;headerlink&quot; title=&quot;Git-開新專案 and 基本使用&quot;&gt;&lt;/a&gt;Git-開新專案 and 基本使用&lt;/h1&gt;&lt;h2 id=&quot;解釋&quot;&gt;&lt;</summary>
       
     
     
