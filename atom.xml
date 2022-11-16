@@ -6,7 +6,7 @@
   <link href="https://chocolin1226.github.io/atom.xml" rel="self"/>
   
   <link href="https://chocolin1226.github.io/"/>
-  <updated>2022-11-16T10:47:25.743Z</updated>
+  <updated>2022-11-16T10:53:01.702Z</updated>
   <id>https://chocolin1226.github.io/</id>
   
   <author>
@@ -21,15 +21,14 @@
     <link href="https://chocolin1226.github.io/2022/11/02/HTML_01/"/>
     <id>https://chocolin1226.github.io/2022/11/02/HTML_01/</id>
     <published>2022-11-02T08:33:15.000Z</published>
-    <updated>2022-11-16T10:47:25.743Z</updated>
+    <updated>2022-11-16T10:53:01.702Z</updated>
     
-    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="下載-VScode-延伸模組"><a href="#下載-VScode-延伸模組" class="headerlink" title="下載 VScode 延伸模組"></a>下載 VScode 延伸模組</h2><p>Auto Rename Tag<br>Chinese Lorem<br>CSS Variable Autocomplete<br>IntelliSense for CSS class names in HTML<br>Live Preview<br>Live Server<br>Path Intellisense</p><h2 id="VScode-快捷設定"><a href="#VScode-快捷設定" class="headerlink" title="VScode 快捷設定"></a>VScode 快捷設定</h2><p>左下齒輪-Keyboard Shortcuts-zoom-(1)Editor Font Zoom in(Ctrl +) (2)Editor Font Zoom out(Ctrl -)<br>左下齒輪-Settings-(1)wrap-Editor:Word Wrap-on (2)emmettab-v<br>VScode 快捷鍵<br>Ctrl + n 開新檔<br>Ctrl + k 再 m 修改語言格式<br>div&gt;p 產生一個 div 包含 P 段落<br>div+p 產生一個 div 再產生一個 P 段落<br>p<em>10 產生 10 個段落<br>p&gt;lorem 產生一個包含假文段落<br>p</em>10&gt;lorem 產生 10 個包含假文段落<br>lorem10 產生 10 個字的假文<br>ctlorem 產生中文假文</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="下載-VScode-延伸模組"><a href="#下載-VScode-延伸模組" class="headerlink" title="下載 VScode 延伸模組"></a>下載 VScode 延伸模組</h2><p>Auto Rename Tag<br>Chinese Lorem<br>CSS Variable Autocomplete<br>IntelliSense for CSS class names in HTML<br>Live Preview<br>Live Server<br>Path Intellisense</p><h2 id="VScode-快捷設定"><a href="#VScode-快捷設定" class="headerlink" title="VScode 快捷設定"></a>VScode 快捷設定</h2><p>左下齒輪-Keyboard Shortcuts-zoom-(1)Editor Font Zoom in(Ctrl +) (2)Editor Font Zoom out(Ctrl -)<br>左下齒輪-Settings-(1)wrap-Editor:Word Wrap-on (2)emmettab-v<br>VScode 快捷鍵<br>Ctrl + n 開新檔<br>Ctrl + k 再 m 修改語言格式<br>div&gt;p 產生一個 div 包含 P 段落<br>div+p 產生一個 div 再產生一個 P 段落<br>p<em>10 產生 10 個段落<br>p&gt;lorem 產生一個包含假文段落<br>p</em>10&gt;lorem 產生 10 個包含假文段落<br>lorem10 產生 10 個字的假文<br>ctlorem 產生中文假文</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;下載-VScode-延伸模組&quot;&gt;&lt;a href=&quot;#下載-VScode-延伸模組&quot; class=&quot;headerlink&quot; title=&quot;下載 VScode 延伸模組&quot;&gt;&lt;/a&gt;下載 VScode 延伸模組&lt;/h2&gt;&lt;p&gt;Auto Rena</summary>
+    <summary type="html">&lt;h2 id=&quot;下載-VScode-延伸模組&quot;&gt;&lt;a href=&quot;#下載-VScode-延伸模組&quot; class=&quot;headerlink&quot; title=&quot;下載 VScode 延伸模組&quot;&gt;&lt;/a&gt;下載 VScode 延伸模組&lt;/h2&gt;&lt;p&gt;Auto Rename Tag&lt;br&gt;Chi</summary>
       
     
     
@@ -42,15 +41,14 @@
     <link href="https://chocolin1226.github.io/2022/11/01/Git_01/"/>
     <id>https://chocolin1226.github.io/2022/11/01/Git_01/</id>
     <published>2022-11-01T08:33:15.000Z</published>
-    <updated>2022-11-16T10:47:32.394Z</updated>
+    <updated>2022-11-16T10:52:54.254Z</updated>
     
-    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="解釋"><a href="#解釋" class="headerlink" title="解釋"></a>解釋</h2><p>Git ：分散式的版本控制系統<br>集中式：集中上傳到同一地點，從同一地點下載<br>分散式：本地端可指定給任一個本地端<br>集中式缺點：集中的端點壞掉就全部不能用了。<br>Git 同時支援本地與遠端操作。</p><h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir git-demo #新增專案資料夾</span><br><span class="line">$ cd git-demo #轉到此資料夾內</span><br><span class="line">$ git init #初始化</span><br><span class="line">$ git status #查狀態</span><br><span class="line">$ git add xxx.xxx #將 xxx.xxx 加入暫存區</span><br><span class="line">$ git commit -m&quot;ooo&quot; #存入本地儲存庫，並將此次版本命名為 ooo</span><br></pre></td></tr></table></figure><h2 id="增加-VScode-延伸模組"><a href="#增加-VScode-延伸模組" class="headerlink" title="增加 VScode 延伸模組"></a>增加 VScode 延伸模組</h2><p>Git Graph<br>Remote Development<br>WSL</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="解釋"><a href="#解釋" class="headerlink" title="解釋"></a>解釋</h2><p>Git ：分散式的版本控制系統<br>集中式：集中上傳到同一地點，從同一地點下載<br>分散式：本地端可指定給任一個本地端<br>集中式缺點：集中的端點壞掉就全部不能用了。<br>Git 同時支援本地與遠端操作。</p><h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir git-demo #新增專案資料夾</span><br><span class="line">$ cd git-demo #轉到此資料夾內</span><br><span class="line">$ git init #初始化</span><br><span class="line">$ git status #查狀態</span><br><span class="line">$ git add xxx.xxx #將 xxx.xxx 加入暫存區</span><br><span class="line">$ git commit -m&quot;ooo&quot; #存入本地儲存庫，並將此次版本命名為 ooo</span><br></pre></td></tr></table></figure><h2 id="增加-VScode-延伸模組"><a href="#增加-VScode-延伸模組" class="headerlink" title="增加 VScode 延伸模組"></a>增加 VScode 延伸模組</h2><p>Git Graph<br>Remote Development<br>WSL</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;解釋&quot;&gt;&lt;a href=&quot;#解釋&quot; class=&quot;headerlink&quot; title=&quot;解釋&quot;&gt;&lt;/a&gt;解釋&lt;/h2&gt;&lt;p&gt;Git ：分散式的版本控制系統&lt;br&gt;集中式：集中上傳到同一地點，從同一地點下載&lt;br&gt;分散式：本地端可指定給任一</summary>
+    <summary type="html">&lt;h2 id=&quot;解釋&quot;&gt;&lt;a href=&quot;#解釋&quot; class=&quot;headerlink&quot; title=&quot;解釋&quot;&gt;&lt;/a&gt;解釋&lt;/h2&gt;&lt;p&gt;Git ：分散式的版本控制系統&lt;br&gt;集中式：集中上傳到同一地點，從同一地點下載&lt;br&gt;分散式：本地端可指定給任一個本地端&lt;br&gt;集中式缺點</summary>
       
     
     
