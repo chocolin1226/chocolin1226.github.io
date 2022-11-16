@@ -2,6 +2,7 @@
 title: Ruby on Rails-MCV的Model
 date: 2022-11-08 16:33:15
 tags: 
+description: MCV的Model
 ---
 
 ## What is Model?

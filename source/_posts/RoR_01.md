@@ -2,6 +2,7 @@
 title: Ruby on Rails-New Rails
 date: 2022-11-06 16:33:15
 tags: 
+description: 
 ---
 
 ## 為什麼使用變數？
