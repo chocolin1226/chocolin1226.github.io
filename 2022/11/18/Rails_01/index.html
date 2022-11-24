@@ -19,27 +19,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"chocolin1226.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="JavaScript">
+    <meta name="description" content="Rails專案">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript-by value&#x2F;by reference給值&#x2F;給址">
-<meta property="og:url" content="https://chocolin1226.github.io/2022/11/04/JS_02/index.html">
+<meta property="og:title" content="路徑&#x2F;加密&#x2F;關聯">
+<meta property="og:url" content="https://chocolin1226.github.io/2022/11/18/Rails_01/index.html">
 <meta property="og:site_name" content="Choco">
-<meta property="og:description" content="JavaScript">
+<meta property="og:description" content="Rails專案">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2022-11-04T08:33:15.000Z">
-<meta property="article:modified_time" content="2022-11-16T18:09:51.106Z">
+<meta property="article:published_time" content="2022-11-18T08:33:15.000Z">
+<meta property="article:modified_time" content="2022-11-24T05:25:23.847Z">
 <meta property="article:author" content="Choco">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://chocolin1226.github.io/2022/11/04/JS_02/">
+<link rel="canonical" href="https://chocolin1226.github.io/2022/11/18/Rails_01/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://chocolin1226.github.io/2022/11/04/JS_02/","path":"2022/11/04/JS_02/","title":"JavaScript-by value/by reference給值/給址"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://chocolin1226.github.io/2022/11/18/Rails_01/","path":"2022/11/18/Rails_01/","title":"路徑/加密/關聯"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>JavaScript-by value/by reference給值/給址 | Choco</title>
+<title>路徑/加密/關聯 | Choco</title>
   
 
 
@@ -116,7 +116,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#by-value"><span class="nav-number">1.</span> <span class="nav-text">by value:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#by-reference"><span class="nav-number">2.</span> <span class="nav-text">by reference:</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%95%B6%E8%A6%81%E5%BB%BA%E7%AB%8B%E5%89%8D%E5%8F%B0%E8%B7%AF%E5%BE%91"><span class="nav-number">1.</span> <span class="nav-text">當要建立前台路徑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%82%BA%E5%AF%86%E7%A2%BC%E5%8A%A0%E5%AF%86"><span class="nav-number">2.</span> <span class="nav-text">為密碼加密</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cookie-%E8%88%87-session"><span class="nav-number">3.</span> <span class="nav-text">cookie 與 session</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E8%A3%BD%E4%BD%9C%E4%BD%BF%E7%94%A8%E8%80%85%EF%BC%88%E5%8C%85%E5%90%AB%E7%99%BB%E5%85%A5%E7%99%BB%E5%87%BA%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">快速製作使用者（包含登入登出）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BB%BA%E7%AB%8B%E9%97%9C%E8%81%AF%E6%80%A7"><span class="nav-number">5.</span> <span class="nav-text">建立關聯性</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -181,7 +181,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://chocolin1226.github.io/2022/11/04/JS_02/">
+    <link itemprop="mainEntityOfPage" href="https://chocolin1226.github.io/2022/11/18/Rails_01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/chocolin.png">
@@ -194,12 +194,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="JavaScript-by value/by reference給值/給址 | Choco">
-      <meta itemprop="description" content="JavaScript">
+      <meta itemprop="name" content="路徑/加密/關聯 | Choco">
+      <meta itemprop="description" content="Rails專案">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          JavaScript-by value/by reference給值/給址
+          路徑/加密/關聯
         </h1>
 
         <div class="post-meta-container">
@@ -210,20 +210,20 @@
       </span>
       <span class="post-meta-item-text">發表於</span>
 
-      <time title="創建時間：2022-11-04 16:33:15" itemprop="dateCreated datePublished" datetime="2022-11-04T16:33:15+08:00">2022-11-04</time>
+      <time title="創建時間：2022-11-18 16:33:15" itemprop="dateCreated datePublished" datetime="2022-11-18T16:33:15+08:00">2022-11-18</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2022-11-17 02:09:51" itemprop="dateModified" datetime="2022-11-17T02:09:51+08:00">2022-11-17</time>
+      <time title="修改時間：2022-11-24 13:25:23" itemprop="dateModified" datetime="2022-11-24T13:25:23+08:00">2022-11-24</time>
     </span>
 
   
 </div>
 
-            <div class="post-description">JavaScript</div>
+            <div class="post-description">Rails專案</div>
         </div>
       </header>
 
@@ -231,10 +231,29 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="by-value"><a href="#by-value" class="headerlink" title="by value:"></a>by value:</h2><p><strong>一般原始型別（primitive type：Boolean, String, Number, null, undefined）只是給值，不影響原本址的內容。</strong><br>let a &#x3D; 1;<br>let b &#x3D; a;<br>b &#x3D; 2<br>console.log(a);<br>&#x3D;&gt;1</p>
-<h2 id="by-reference"><a href="#by-reference" class="headerlink" title="by reference:"></a>by reference:</h2><p><strong>物件型別（Objects type：Object, Array, Function）是給址，因此會影響原本址的內容。</strong><br>let a &#x3D;[1];<br>let b &#x3D; a;<br>b[0] &#x3D; 2<br>console.log(a);<br>&#x3D;&gt;[2]</p>
-<p>要注意的是<br>let a &#x3D;[1];<br>let b &#x3D; a;<br>b&#x3D; [2]<br>console.log(a);<br>&#x3D;&gt;[1]</p>
-<p>看得出差別嗎？<br>下面的例子b&#x3D;[2]是重新給b一個新的址（新的陣列），<br>因此不會影響原本a的址的內容。</p>
+        <h2 id="當要建立前台路徑"><a href="#當要建立前台路徑" class="headerlink" title="當要建立前台路徑"></a>當要建立前台路徑</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">resource <span class="symbol">:user</span>, <span class="symbol">as:</span> <span class="string">&quot;users&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>可使用resource 會缺少id(不會看到別人的）, index（不會有所有列表）</li>
+<li>resource單數 :user也是單數</li>
+<li>慣例上會去找users_path但我們是用單數去長，所以要再做給他<code>as: &quot;users&quot;</code></li>
+</ol>
+<h2 id="為密碼加密"><a href="#為密碼加密" class="headerlink" title="為密碼加密"></a>為密碼加密</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">private</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">encrypt_password</span></span><br><span class="line">    <span class="variable language_">self</span>.password =Digest::<span class="variable constant_">SHA256</span>.digest(<span class="variable language_">self</span>.password)</span><br><span class="line">  <span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="cookie-與-session"><a href="#cookie-與-session" class="headerlink" title="cookie 與 session"></a>cookie 與 session</h2><ol>
+<li>server伺服器 拿的是session</li>
+<li>client瀏覽器（使用者） 拿的是cookie</li>
+<li>類似點餐時會有取單號碼牌</li>
+</ol>
+<h2 id="快速製作使用者（包含登入登出）"><a href="#快速製作使用者（包含登入登出）" class="headerlink" title="快速製作使用者（包含登入登出）"></a>快速製作使用者（包含登入登出）</h2><p>下載套件<br>diveser 或 Sorcery</p>
+<h2 id="建立關聯性"><a href="#建立關聯性" class="headerlink" title="建立關聯性"></a>建立關聯性</h2><p>WishList &lt;-&gt; User</p>
+<ol>
+<li>在User.rb &#x3D;&gt; <code>has_many: wish_lists</code></li>
+<li>在WishLst.rb &#x3D;&gt; <code>belongs_to :user</code></li>
+</ol>
+<ul>
+<li>可以單獨存在，有查詢需求才需要添加。</li>
+</ul>
 
     </div>
 
@@ -248,13 +267,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/11/03/JS_01/" rel="prev" title="JavaScript-找陣列內元素方法比較 find, findIndex, indexOf, lastIndexOf">
-                  <i class="fa fa-chevron-left"></i> JavaScript-找陣列內元素方法比較 find, findIndex, indexOf, lastIndexOf
+                <a href="/2022/11/17/RoR_07/" rel="prev" title="find/ find_by/ find_by！/ where">
+                  <i class="fa fa-chevron-left"></i> find/ find_by/ find_by！/ where
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/11/05/JS_03/" rel="next" title="JavaScript-物件導向 第6堂">
-                  JavaScript-物件導向 第6堂 <i class="fa fa-chevron-right"></i>
+                <a href="/2022/11/18/Rails_02/" rel="next" title="添加icon/多對多關聯">
+                  添加icon/多對多關聯 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
