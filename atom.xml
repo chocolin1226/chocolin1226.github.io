@@ -6,7 +6,7 @@
   <link href="https://chocolin1226.github.io/atom.xml" rel="self"/>
   
   <link href="https://chocolin1226.github.io/"/>
-  <updated>2022-11-24T05:27:15.031Z</updated>
+  <updated>2022-11-24T09:55:50.645Z</updated>
   <id>https://chocolin1226.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>兩個JS controller 溝通/隨機產生12位數亂碼</title>
+    <link href="https://chocolin1226.github.io/2022/11/24/Rails_03/"/>
+    <id>https://chocolin1226.github.io/2022/11/24/Rails_03/</id>
+    <published>2022-11-24T09:33:15.000Z</published>
+    <updated>2022-11-24T09:55:50.645Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="金流處理方式"><a href="#金流處理方式" class="headerlink" title="金流處理方式"></a>金流處理方式</h2><h3 id="幕前"><a href="#幕前" class="headerlink" title="幕前"></a>幕前</h3><p>即時付款(信用卡)</p><h3 id="幕後處理"><a href="#幕後處理" class="headerlink" title="幕後處理"></a>幕後處理</h3><p>非同步處理，沒有馬上付錢(匯款) </p><h2 id="ngork-套件"><a href="#ngork-套件" class="headerlink" title="ngork 套件"></a>ngork 套件</h2><p>可以產生「暫時的網址」</p><h2 id="dotenv-套件"><a href="#dotenv-套件" class="headerlink" title="dotenv 套件"></a>dotenv 套件</h2><p>處理環境變數 或 機要資訊（金鑰）</p><h2 id="處理兩個JS-controller-溝通"><a href="#處理兩個JS-controller-溝通" class="headerlink" title="處理兩個JS controller 溝通"></a>處理兩個JS controller 溝通</h2><p>參考這裡<a href="https://fullstackheroes.com/tutorials/stimulus/create-custom-events/">fullstackheroes</a></p><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const event = new CustomEvent(<span class="string">&quot;update-map&quot;</span>);</span><br><span class="line">window.dispatchEvent(event);</span><br></pre></td></tr></table></figure><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data-action=<span class="string">&quot;update-map@window-&gt;map#updateHotspotLocation&quot;</span></span><br></pre></td></tr></table></figure><h2 id="隨機產生12位數亂碼"><a href="#隨機產生12位數亂碼" class="headerlink" title="隨機產生12位數亂碼"></a>隨機產生12位數亂碼</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">before_validation <span class="symbol">:generate_serial</span></span><br><span class="line"></span><br><span class="line">private</span><br><span class="line"></span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">generate_serial</span></span><br><span class="line">    <span class="variable language_">self</span>.serial = SecureRandom.alphanumeric(<span class="number">12</span>)</span><br><span class="line">  <span class="keyword">end</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">Rails專案</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>添加icon/多對多關聯</title>
