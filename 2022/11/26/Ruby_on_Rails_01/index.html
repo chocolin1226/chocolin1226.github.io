@@ -19,23 +19,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"chocolin1226.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Choco">
-<meta property="og:url" content="https://chocolin1226.github.io/archives/2022/index.html">
+    <meta name="description" content="Ruby on Rails 之 CRUD 新手記憶弱區">
+<meta property="og:type" content="article">
+<meta property="og:title" content="怎麼new一個rails專案？">
+<meta property="og:url" content="https://chocolin1226.github.io/2022/11/26/Ruby_on_Rails_01/index.html">
 <meta property="og:site_name" content="Choco">
+<meta property="og:description" content="Ruby on Rails 之 CRUD 新手記憶弱區">
 <meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2022-11-25T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-11-26T02:17:34.190Z">
 <meta property="article:author" content="Choco">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://chocolin1226.github.io/archives/2022/">
+<link rel="canonical" href="https://chocolin1226.github.io/2022/11/26/Ruby_on_Rails_01/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-TW","comments":"","permalink":"","path":"archives/2022/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://chocolin1226.github.io/2022/11/26/Ruby_on_Rails_01/","path":"2022/11/26/Ruby_on_Rails_01/","title":"怎麼new一個rails專案？"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>歸檔 | Choco</title>
+<title>怎麼new一個rails專案？ | Choco</title>
   
 
 
@@ -67,7 +71,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Choco</h1>
+      <p class="site-title">Choco</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -99,7 +103,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目錄
@@ -112,6 +116,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%80%E5%9F%BA%E6%9C%AC%E6%96%B9%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">最基本方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%B9%E5%AE%9A%E7%89%88%E6%9C%AC%E6%96%B9%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">特定版本方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%81%87%E5%88%B0%E7%9A%84%E9%8C%AF%E8%AA%A4%E8%A8%8A%E6%81%AF"><span class="nav-number">3.</span> <span class="nav-text">遇到的錯誤訊息</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%EF%BC%9A"><span class="nav-number">3.1.</span> <span class="nav-text">解：</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -165,232 +170,95 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共有 16 篇文章。 繼續努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://chocolin1226.github.io/2022/11/26/Ruby_on_Rails_01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/chocolin.png">
+      <meta itemprop="name" content="Choco">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Choco">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="怎麼new一個rails專案？ | Choco">
+      <meta itemprop="description" content="Ruby on Rails 之 CRUD 新手記憶弱區">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          怎麼new一個rails專案？
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+
+      <time title="創建時間：2022-11-26 00:00:00 / 修改時間：10:17:34" itemprop="dateCreated datePublished" datetime="2022-11-26T00:00:00+08:00">2022-11-26</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">Ruby on Rails 之 CRUD 新手記憶弱區</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="最基本方式"><a href="#最基本方式" class="headerlink" title="最基本方式"></a>最基本方式</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rails new &lt;專案名稱&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="特定版本方式"><a href="#特定版本方式" class="headerlink" title="特定版本方式"></a>特定版本方式</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rails _6.1.7_ new &lt;專案名稱&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="遇到的錯誤訊息"><a href="#遇到的錯誤訊息" class="headerlink" title="遇到的錯誤訊息"></a>遇到的錯誤訊息</h2><p>Invalid application name test. Please give a name which does not match one of the reserved rails words: application, destroy, plugin, runner, test</p>
+<h3 id="解："><a href="#解：" class="headerlink" title="解："></a>解：</h3><p>不能用特殊字(application, destroy, plugin, runner, test)當專案名稱。</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-11-26T00:00:00+08:00"
-              content="2022-11-26">
-          11-26
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/26/Ruby_on_Rails_01/" itemprop="url">
-            <span itemprop="name">怎麼new一個rails專案？</span>
-          </a>
-      </div>
+    <footer class="post-footer">
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/11/24/Rails_03/" rel="prev" title="兩個JS controller 溝通/隨機產生12位數亂碼">
+                  <i class="fa fa-chevron-left"></i> 兩個JS controller 溝通/隨機產生12位數亂碼
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-11-24T17:33:15+08:00"
-              content="2022-11-24">
-          11-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/24/Rails_03/" itemprop="url">
-            <span itemprop="name">兩個JS controller 溝通/隨機產生12位數亂碼</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-11-18T16:33:15+08:00"
-              content="2022-11-18">
-          11-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/18/Rails_02/" itemprop="url">
-            <span itemprop="name">添加icon/多對多關聯</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-11-18T16:33:15+08:00"
-              content="2022-11-18">
-          11-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/18/Rails_01/" itemprop="url">
-            <span itemprop="name">路徑/加密/關聯</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-11-17T16:33:15+08:00"
-              content="2022-11-17">
-          11-17
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/17/RoR_07/" itemprop="url">
-            <span itemprop="name">find/ find_by/ find_by！/ where</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-11-15T16:33:15+08:00"
-              content="2022-11-15">
-          11-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/15/RoR_06/" itemprop="url">
-            <span itemprop="name">Ruby on Rails-1115</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-11-14T16:33:15+08:00"
-              content="2022-11-14">
-          11-14
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/14/RoR_05/" itemprop="url">
-            <span itemprop="name">Ruby on Rails-1114</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-11-11T16:33:15+08:00"
-              content="2022-11-11">
-          11-11
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/11/RoR_04/" itemprop="url">
-            <span itemprop="name">Ruby on Rails-1111</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-11-08T16:33:15+08:00"
-              content="2022-11-08">
-          11-08
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/08/RoR_03/" itemprop="url">
-            <span itemprop="name">Ruby on Rails-MCV的Model</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-11-07T16:33:15+08:00"
-              content="2022-11-07">
-          11-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/07/RoR_02/" itemprop="url">
-            <span itemprop="name">Ruby on Rails-Ruby 複習</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2022/page/2/">2</a><a class="extend next" rel="next" href="/archives/2022/page/2/"><i class="fa fa-angle-right" aria-label="下一頁"></i></a>
-  </nav>
+
+
+
 
 </div>
   </main>

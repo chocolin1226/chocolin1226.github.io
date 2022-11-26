@@ -6,7 +6,7 @@
   <link href="https://chocolin1226.github.io/atom.xml" rel="self"/>
   
   <link href="https://chocolin1226.github.io/"/>
-  <updated>2022-11-24T09:55:50.645Z</updated>
+  <updated>2022-11-26T02:17:34.190Z</updated>
   <id>https://chocolin1226.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>怎麼new一個rails專案？</title>
+    <link href="https://chocolin1226.github.io/2022/11/26/Ruby_on_Rails_01/"/>
+    <id>https://chocolin1226.github.io/2022/11/26/Ruby_on_Rails_01/</id>
+    <published>2022-11-25T16:00:00.000Z</published>
+    <updated>2022-11-26T02:17:34.190Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="最基本方式"><a href="#最基本方式" class="headerlink" title="最基本方式"></a>最基本方式</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rails new &lt;專案名稱&gt;</span><br></pre></td></tr></table></figure><h2 id="特定版本方式"><a href="#特定版本方式" class="headerlink" title="特定版本方式"></a>特定版本方式</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rails _6.1.7_ new &lt;專案名稱&gt;</span><br></pre></td></tr></table></figure><h2 id="遇到的錯誤訊息"><a href="#遇到的錯誤訊息" class="headerlink" title="遇到的錯誤訊息"></a>遇到的錯誤訊息</h2><p>Invalid application name test. Please give a name which does not match one of the reserved rails words: application, destroy, plugin, runner, test</p><h3 id="解："><a href="#解：" class="headerlink" title="解："></a>解：</h3><p>不能用特殊字(application, destroy, plugin, runner, test)當專案名稱。</p>]]></content>
+    
+    
+    <summary type="html">Ruby on Rails 之 CRUD 新手記憶弱區</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>兩個JS controller 溝通/隨機產生12位數亂碼</title>
